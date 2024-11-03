@@ -2,7 +2,17 @@
 My answers for problems at the end of each chapter in the book Introduction to Probability by Joseph K. Blitzstein, Jessica Hwang 
 
 ## Chapter 2
-**Question 11** 
+### Question 1
+<details>A spam filter is designed by looking at commonly occurring phrases in spam. Suppose
+that 80% of email is spam. In 10% of the spam emails, the phrase “free money” is used,
+whereas this phrase is only used in 1% of non-spam emails. A new email has just arrived,
+which does mention “free money”. What is the probability that it is spam?<summary>Question</summary></details>
+
+<details><summary>Answer</summary></details>
+
+<details><summary>Explaination</summary></details>
+
+### Question 11
 <details>An exit poll in an election is a survey taken of voters just after they have voted. One
 major use of exit polls has been so that news organizations can try to figure out as
 soon as possible who won the election, before the votes are officially counted. This has
