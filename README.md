@@ -17,6 +17,12 @@ that P (W |A) = 0.7 but P (W |Ac) = 0.3. In the exit poll, 60% of the respondent
 they voted for A (assume that they are all honest), suggesting a comfortable victory for
 A. Find P (A), the true proportion of people who voted for A.<summary>Question</summary></details>
 
+<details>$P(A)=\frac{9}{23}$<summary>Answer</summary></details>
 
-<details><summary>Explaination</summary> We are given the following: <br> $P(W|A) = .7$ <br> $P(W|A^c) = .3$ and <br>$60\%$ of people surveyed voted for candidate $A$ <br>so for this we use Bayes theorem, plug in our values and then solve for $P(A)$, which is different than the previous problems.  <br>
-$P(A|W) = \dfrac{P(W|A)\cdot P(A)}{.7P(A|W) + .3(1-P(A|W))}$ <br> now plug in values for your variables, remembering that $P(A|W) = .6$, we get <br>$.6 = \dfrac{.7 \cdot P(A)}{.54}$ NOT DONE, FINISH</details>
+
+<details><summary>Explaination</summary> We are given the following: <br> $P(W|A) = .7$ <br> $P(W|A^c) = .3$ and <br>$60\%$ of people surveyed voted for candidate $A$ <br>
+so for this we use Bayes theorem, plug in our values and then solve for $P(A)$, which is different than the previous problems.  <br>
+$P(A|W) = \dfrac{P(W|A)\cdot P(A)}{P(W|A)P(A) + P(W|A^C)(1-P(A))}$ <br> 
+  now plug in values for your variables, remembering that $P(A|W) = .6$, we get <br>
+  $.6 = \dfrac{.7 \cdot P(A)}{.7P(A) + .3(1-P(A))}$<br>
+After algebraically solving for $P(A)$, we get our final answer of $P(A) = \frac{9}{23}$</details>
