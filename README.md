@@ -37,6 +37,15 @@ but if he does not know then he will guess completely randomly. Let P(K) = p.<br
 (a) Find P(K|R) (in terms of p and n).<br>
 (b) Show that P(K|R) ≥ p, and explain why this makes sense intuitively. When (if ever)
 does P(K|R) equal p?<summary>Question</summary></details>
+<details>
+$P(R|K) = 1$<br>
+$P(R|K^c) = \frac{1}{n}$<br>
+$P(K) = p$<br>
+$P(K|R)=\dfrac{p}{p+\frac{1-p}{n}}$<br>
+Because $\dfrac{1-p}{n} cannot be negative, $P(K|R)$ can never be less than $p$<br>
+However, if $p=0$, then $P(K|R)=0$ and if $p=1$, then $P(K|R)=1$
+  <summary>Explaination</summary>
+</details>
 
 ### Question 11
 <details>An exit poll in an election is a survey taken of voters just after they have voted. One
