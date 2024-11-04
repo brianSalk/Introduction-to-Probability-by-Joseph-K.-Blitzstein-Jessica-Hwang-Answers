@@ -19,12 +19,12 @@ to the CDC, 21.6% of men in the U.S. smoke, What is the probability that a man i
 the U.S. is a smoker, given that he develops lung cancer?
 <summary>Question</summary></details>
 
-<details><summary>Answer</summary></details>
+<details>$P(S|C)=\dfrac{\frac{23}{24} \cdot .216}{.239\overline{6}}\approx.864$<summary>Answer</summary></details>
 
 <details>$S=is\_smoker$<br>$C=has\_cancer$<br>$P(S)=.216$<br>$P(C|S)=23/24$<br>
   $P(S|C)=\dfrac{P(C|S)P(S)}{P(C)}$<br>$P(C) = P(C|S)P(S) + P(C|S^c)P(S^c)$<br>plugging in our values from above, we get<br>
   $P(C) = \frac{23}{24}\cdot .216 + \frac{1}{24} \cdot .784 = .239\overline{6}$<br>our final equation is<br>
-  $P(S|C)=\dfrac{23/24 \cdot .216}{.239\overline{6}}$ FIX ME<summary>Explaination</summary></details>
+  $P(S|C)=\dfrac{23/24 \cdot .216}{.239\overline{6}}\approx.864$<summary>Explaination</summary></details>
 
 ### Question 11
 <details>An exit poll in an election is a survey taken of voters just after they have voted. One
@@ -39,7 +39,7 @@ accept and some refuse. For a randomly selected voter, let A be the event that t
 for A, and W be the event that they are willing to participate in the exit poll. Suppose
 that P (W |A) = 0.7 but P (W |Ac) = 0.3. In the exit poll, 60% of the respondents say
 they voted for A (assume that they are all honest), suggesting a comfortable victory for
-A. Find P (A), the true proportion of people who voted for A.<summary>Question</summary></details>
+A. Find P(A), the true proportion of people who voted for A.<summary>Question</summary></details>
 
 <details>$P(A)=\frac{9}{23}$<summary>Answer</summary></details>
 
