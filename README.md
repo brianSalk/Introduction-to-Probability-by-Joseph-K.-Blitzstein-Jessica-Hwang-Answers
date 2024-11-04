@@ -24,7 +24,19 @@ the U.S. is a smoker, given that he develops lung cancer?
 <details>$S=is\_smoker$<br>$C=has\_cancer$<br>$P(S)=.216$<br>$P(C|S)=23/24$<br>
   $P(S|C)=\dfrac{P(C|S)P(S)}{P(C)}$<br>$P(C) = P(C|S)P(S) + P(C|S^c)P(S^c)$<br>plugging in our values from above, we get<br>
   $P(C) = \frac{23}{24}\cdot .216 + \frac{1}{24} \cdot .784 = .239\overline{6}$<br>our final equation is<br>
-  $P(S|C)=\dfrac{23/24 \cdot .216}{.239\overline{6}}\approx.864$<summary>Explaination</summary></details>
+  $P(S|C)=\dfrac{23/24 \cdot .216}{.239\overline{6}}\approx.864$<br>
+  Notice that we do not actually know what the rate of cancer is.  Knowing that smokers are 23 times more likely to get cancer is enough for us to answer this question.<summary>Explaination</summary></details>
+
+### Question 4
+<details>Fred is answering a multiple-choice problem on an exam, and has to choose one of n
+options (exactly one of which is correct). Let K be the event that he knows the answer,
+and R be the event that he gets the problem right (either through knowledge or through
+Conditional probability 75
+luck). Suppose that if he knows the right answer he will definitely get the problem right,
+but if he does not know then he will guess completely randomly. Let P(K) = p.<br><br>
+(a) Find P(K|R) (in terms of p and n).<br>
+(b) Show that P(K|R) ≥ p, and explain why this makes sense intuitively. When (if ever)
+does P(K|R) equal p?<summary>Question</summary></details>
 
 ### Question 11
 <details>An exit poll in an election is a survey taken of voters just after they have voted. One
