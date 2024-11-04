@@ -41,8 +41,8 @@ does P(K|R) equal p?<summary>Question</summary></details>
 $P(R|K) = 1$<br>
 $P(R|K^c) = \frac{1}{n}$<br>
 $P(K) = p$<br>
-$P(K|R)=\dfrac{p}{p+\frac{1-p}{n}}$<br>
-Because $\dfrac{1-p}{n} cannot be negative, $P(K|R)$ can never be less than $p$<br>
+$P(K|R)=\dfrac{p}{p+\frac{1-p}{n}}$<br><br>
+Because $\dfrac{1-p}{n}$ cannot be negative, $P(K|R)$ can never be less than $p$<br><br>
 However, if $p=0$, then $P(K|R)=0$ and if $p=1$, then $P(K|R)=1$
   <summary>Explaination</summary>
 </details>
