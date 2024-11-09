@@ -54,5 +54,176 @@ A round-robin tournament is being held with n tennis players; this means that ev
 		b) We are couting the number of pairs of players<summary>Explaination</summary></details>
 <h2>Question 5</h2>
 <details>
-	<summary></summary></details>
+	A)
+	$$
+	n-1
+	$$
+	B)
+	$$
+	\sum_{i=0}^{n-1} 2^i 
+	$$
+	C)
+	$$
+	2^n - 1
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	A) Draw the bracket to gain an intuition.<br>
+	B) Each round has half the number of the previous round, starting with \(2^{n-1}\)<br>
+	C) There are \(2^{n-1}\) players and each game eliminates one player until one final winner is left, this means we must play \(2^{n} -1 \) games.
+	<summary>Explaination</summary>
+</details>
+<h2>Question 6</h2>
+<details>
+	$$
+	2 {20 \choose 2}	
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	There are 20 players and we are counting pairs of players, that is how we got \({20 \choose 2}\), then we need to count the possibility that each player is either black or white, that gives us the \(2\).
+	<summary>Explaination</summary>
+</details>
+
+<h2>Question 7</h2>
+<details>
+	A)
+	$$
+	{7 \choose 3, 2, 2} = 210
+	$$
+	B)
+	$$
+	{7 \choose 4}
+	$$
+	C)
+	$$
+	{6 \choose 3}
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	A) Use multinomial coefficient because we have 3 different outcomes, 3 wins, 2 loses and 2 ties.<br>
+	B) We count all the ways player a gets 4 wins and player b gets 3 wins out of 7 games.  Because there are no ties, this is just 7 choose 4 (or 7 choose 3)<br>
+	C) Because we must play 7 games and player a must win 4 to 3, the 7th game must be won by player a.  There are 6 choose 3 ways for her to win the other games.
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 8</h2>
+<details>
+	$$
+	\dfrac{{12 \choose 2,5,5}}{2}
+	$$
+<summary>Answer</summary>
+</details>
+<details>
+	There are 12 people and we want to place them into 3 teams of sizes 2,5, and 5.  Because two of these teams are the same size, we must then divide by 2!
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 9</h2>
+<details>
+	$$
+	{110 + 111 \choose 110}
+	$$
+	B)
+	$$
+	{110 + 111 \choose 110} \cdot {200 \choose 100}
+	$$
+<summary>Answer</summary>
+</details>
+<details>
+	A) 
+	To find the number of paths from \( (x_1,y_1) \) to \( (x_2, y_2) \) on a grid, you count the ways you can use:
+	$$
+	{x_2 - x_1 + y_2 - y_1 \choose x_2 - x_1}
+	$$
+	because you need to sideways \(x_2 - x_1\) times and up or down \( y_2 - y_1 \) times.  <br>
+	You must go up and right an additional 100, but still need to cross (110, 111), so multiply part a by:
+	$$
+	{200 \choose 100}
+	$$
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 10</h2>
+<details>
+	A)
+	$$
+	\sum_{i=1}^{5} {5 \choose i} \cdot {15 \choose 7-i}
+	$$
+	OR
+	$$
+	{20 \choose 7} - {15 \choose 7}
+	$$
+	B) The provided solution is wrong because when we choose 6 from 19, we might choose the same one we selected from the stats class.  In other words, this approach chooses one class twice.
+<summary>Answer</summary>
+</details>
+<details>
+	A) We can either do case work, selected 1 of the 5 stats courses then 6 of the remaining courses.  Then 2 of the stats courses and 5 of the remaining 15 courses and so on, but a simpler approach is to just subtract all the combinations including no stats courses from all possible combinations.<br>
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 11</h2>
+<details>
+	A)
+	$$
+	m^n
+	$$
+	B)
+	$$
+	{}^mP_n
+	$$
+<summary>Answer</summary>
+</details>
+<details>
+	for part A, we just need to map each value in set A to any value in set B.  This is the same question as "You have a password of length n and an alphabet of m characters, how many unique passwords can be created"<br>
+	For part B, we must map each value of set A to a different value in set B, this is the same as "there are a total of m people, how many unique orderings of length n can they form".
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 12</h2>
+<details>
+	A)
+	$$
+	{52 \choose 13}
+	$$
+	B)
+	$$
+	{52 \choose 13,13,13,13}
+	$$
+	C) $${52 \choose 13}^4$$ counts the number of overall hands if everyone pulled from a different deck of 52 cards.
+	<summary>Answer</summary>
+</details>
+<details>
+	A) we choose 13 or 52 cards, this is basically a tautology<br>
+	B) If the deck is split 4 ways and each person gets 13 cards, we use multinomial theorem.<br>
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 13</h2>
+<details>
+	$$
+	{52 + 10 - 1 \choose 10}
+	$$
+<summary>Answer</summary>
+</details>
+<details>
+	This is the same question as "How many ways can you distribute 10 identical balls into 52 unique buckets?"
+<summary>Explaination</summary>
+</details>
+
+<h2>Question 14</h2>
+<details>
+	$$
+	(4 \cdot (2^8-2))^2
+	$$
+<summary>Answer</summary>
+</details>
+<details>
+	You are ordering 2 pizzas.  Each pizza comes in 4 sizes and may have 1 to 7 toppings.  The \(2^8-2\) part might not seem to make sense at first, but question 15 will show us how this works.
+<summary>Explaination</summary>
+</details>
+
 </body>
+
