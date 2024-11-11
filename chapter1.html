@@ -353,7 +353,42 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <h2>Question 31</h2>
 <details>
 	A) Intuitivly, we know that the probability of the second ball being green is the same as the first because we can pretend that we selected the balls at the same time and the question is the same.<br>
-	B)
+	B) The probability that we choose a green ball first is
+	$$
+	\dfrac{g}{g+r}
+	$$
+	and the probability that we choose a red ball first is 
+	$$
+	\dfrac{r}{r+g}
+	$$
+	If the first ball was green, the probability we select another green ball is
+	$$
+	\dfrac{g-1}{g+r-1}
+	$$
+	and if the first ball was red, the probability we select a green ball is
+	$$
+	\dfrac{g}{g+r-1}
+	$$
+	Put it all together and we see that
+	$$
+	\dfrac{g}{g+r} \cdot \dfrac{g-1}{g+r-1} + \dfrac{r}{g+r} \cdot \dfrac{g}{g+r-1} = \dfrac{g}{g+r}
+	$$
+	C)
+	$$
+	P(gg) = \dfrac{g}{g+r} \cdot \dfrac{g-1}{g+r-1}
+	$$
+	$$
+	P(rr) = \dfrac{r}{r+g} \cdot \dfrac{r-1}{r+g-1}
+	$$
+	$$
+	P(rg) = \dfrac{r}{r+g} \cdot \dfrac{g}{r+g-1}
+	$$
+	$$
+	P(gr) = \dfrac{r}{r+g} \cdot \dfrac{g}{r+g-1}
+	$$
+	Now find the constants where P(gg) + P(rr) = P(rg) + P(gr)<br>
+	r=6, g=10<br>
+	g=6, r=10<br>
 	<summary>Answer</summary>
 </details>
 
