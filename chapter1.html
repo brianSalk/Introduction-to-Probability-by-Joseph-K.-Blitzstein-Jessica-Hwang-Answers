@@ -9,13 +9,15 @@
 <body>
   <h1>Chapter One Answers</h1>
 
+  <!--question1-->
   <h2>Question 1</h2>
   <details>How many ways are there to permute the letters in the word MISSISSIPPI?<summary>Question</summary></details>
   <details>$${11 \choose 4,4,2} = 34,650 $$<summary>Answer</summary></details>
   <details>For this problem, we use multinomial theorem.<br>
   We have 4 Ss, 4 Is, and 2 Ps, this leaves us with <br>
     $${11 \choose 4,4,2} = 34,650$$ permutations of the word MISSISSIPPI.<summary>Details</summary></details>
-    
+
+  <!--Question2-->  
   <h2>Question 2</h2>
     <details>(a) How many 7-digit phone numbers are possible, assuming that the first digit can’t
 be a 0 or a 1?
@@ -29,6 +31,7 @@ dialed 911).<summary>Question</summary></details>
     <details>a) first digit can be 2-9, other 6 digits can be 0-10<br>
         b) there are 1,000 4 digit numbers (including numbers that start with 0), subtract those from part a<summary>Explaination</summary></details>
 
+	<!--Question3-->
     <h2>Question 3</h2>
     <details>Fred is planning to go out to dinner each night of a certain week, Monday through
 Friday, with each dinner being at one of his ten favorite restaurants.
@@ -42,6 +45,7 @@ not willing to eat at the same place twice in a row (or more)?<summary>Question<
     <details>a) think of each day of the week as a position, and each restaurant as different letter<br>
         b) he can choose any restaurant the first day, then for the next four days, he may choose any restaurant excluding the one he went to the previous day.<summary>Explaination</summary></details>
 
+	<!--Question4-->
 	<h2>Question 4</h2>
 	<details>
 A round-robin tournament is being held with n tennis players; this means that every player will play against every other player exactly once.
@@ -52,7 +56,24 @@ A round-robin tournament is being held with n tennis players; this means that ev
 	<details>
 		a) We are counting ordered pairs<br>
 		b) We are couting the number of pairs of players<summary>Explaination</summary></details>
+
+	<!--Question5-->
 <h2>Question 5</h2>
+<details>
+	A knock-out tournament is being held with 2n tennis players. This means that for each
+round, the winners move on to the next round and the losers are eliminated, until only
+one person remains. For example, if initially there are 24 = 16 players, then there are
+8 games in the first round, then the 8 winners move on to round 2, then the 4 winners
+move on to round 3, then the 2 winners move on to round 4, the winner of which is
+declared the winner of the tournament. (There are various systems for determining who
+plays whom within a round, but these do not matter for this problem.)<br><br>
+(a) How many rounds are there?<br>
+(b) Count how many games in total are played, by adding up the numbers of games
+played in each round.<br>
+(c) Count how many games in total are played, this time by directly thinking about it
+without doing almost any calculation.<br>
+	<summary>Question</summary>
+</details>
 <details>
 	A)
 	$$
@@ -74,7 +95,16 @@ A round-robin tournament is being held with n tennis players; this means that ev
 	C) There are \(2^{n-1}\) players and each game eliminates one player until one final winner is left, this means we must play \(2^{n} -1 \) games.
 	<summary>Explaination</summary>
 </details>
+
+<!--Question6-->
 <h2>Question 6</h2>
+<details>
+	There are 20 people at a chess club on a certain day. They each find opponents and
+start playing. How many possibilities are there for how they are matched up, assuming
+that in each game it does matter who has the white pieces (in a chess game, one player
+has the white pieces and the other player has the black pieces)?
+	<summary>Question</summary>
+</details>
 <details>
 	$$
 	2 {20 \choose 2}	
@@ -86,7 +116,24 @@ A round-robin tournament is being held with n tennis players; this means that ev
 	<summary>Explaination</summary>
 </details>
 
+<!--Question7-->
 <h2>Question 7</h2>
+<details>
+	Two chess players, A and B, are going to play 7 games. Each game has three possible
+outcomes: a win for A (which is a loss for B), a draw (tie), and a loss for A (which is
+a win for B). A win is worth 1 point, a draw is worth 0.5 points, and a loss is worth 0
+points.<br><br>
+(a) How many possible outcomes for the individual games are there, such that overall
+player A ends up with 3 wins, 2 draws, and 2 losses?<br>
+(b) How many possible outcomes for the individual games are there, such that A ends
+up with 4 points and B ends up with 3 points?<br>
+(c) Now assume that they are playing a best-of-7 match, where the match will end as
+soon as either player has 4 points. For example, if after 6 games the score is 4 to 2 in
+favor of A, then A wins the match and they don’t play a 7th game. How many possible
+outcomes for the individual games are there, such that the match lasts for 7 games and
+A wins by a score of 4 to 3?<br>
+	<summary>Question</summary>
+</details>
 <details>
 	A)
 	$$
@@ -109,19 +156,45 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <summary>Explaination</summary>
 </details>
 
+<!--Question8-->
 <h2>Question 8</h2>
 <details>
+(a) How many ways are there to split a dozen people into 3 teams, where one team
+has 2 people, and the other two teams have 5 people each?<br>
+(b) How many ways are there to split a dozen people into 3 teams, where each team has
+4 people?<br>
+	<summary>Question</summary>
+</details>
+<details>
+	A)
 	$$
 	\dfrac{{12 \choose 2,5,5}}{2}
+	$$
+	B)
+	$$
+	\dfrac{ {12 \choose 4,4,4} }{3!}
 	$$
 <summary>Answer</summary>
 </details>
 <details>
-	There are 12 people and we want to place them into 3 teams of sizes 2,5, and 5.  Because two of these teams are the same size, we must then divide by 2!
+	A)
+	There are 12 people and we want to place them into 3 teams of sizes 2,5, and 5.  Because two of these teams are the same size, we must then divide by 2!<br>
+	B) There are 12 people and 2 teams of 4.  Because all 3 teams are the same size, we must divide by \(3!\).
 <summary>Explaination</summary>
 </details>
 
+<!--Question9-->
 <h2>Question 9</h2>
+<details>
+	(a) How many paths are there from the point (0, 0) to the point (110, 111) in the
+	plane such that each step either consists of going one unit up or one unit to the right?<br>
+(b) How many paths are there from (0, 0) to (210, 211), where each step consists of going
+one unit up or one unit to the right, and the path has to go through (110, 111)?
+	<summary>Question</summary>
+</details>
+<details>
+	<summary>Question</summary>
+</details>
 <details>
 	$$
 	{110 + 111 \choose 110}
@@ -146,7 +219,15 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <summary>Explaination</summary>
 </details>
 
+<!--Question10-->
 <h2>Question 10</h2>
+<details>
+	<summary>To fulfill the requirements for a certain degree, a student can choose to take any 7 out
+of a list of 20 courses, with the constraint that at least 1 of the 7 courses must be a
+statistics course. Suppose that 5 of the 20 courses are statistics courses.
+(a) How many choices are there for which 7 courses to take?
+(b) Explain intuitively why the answer to (a) is not \({5 \choose 1} \cdot {19 \choose 6}\).</summary>
+</details>
 <details>
 	A)
 	$$
@@ -164,7 +245,16 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <summary>Explaination</summary>
 </details>
 
+<!--Question11-->
 <h2>Question 11</h2>
+<details>
+	Let A and B be sets with |A| = n, |B| = m.<br><br>
+(a) How many functions are there from A to B (i.e., functions with domain A, assigning
+an element of B to each element of A)?<br>
+(b) How many one-to-one functions are there from A to B (see Section A.2.1 of the
+math appendix for information about one-to-one functions)?<br>
+	<summary>Question</summary>
+</details>
 <details>
 	A)
 	$$
@@ -182,7 +272,17 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <summary>Explaination</summary>
 </details>
 
+<!--Question12-->
 <h2>Question 12</h2>
+<details>
+	Four players, named A, B, C, and D, are playing a card game. A standard, well-shuffled
+	deck of cards is dealt to the players (so each player receives a 13-card hand).<br><br>
+(a) How many possibilities are there for the hand that player A will get? (Within a
+hand, the order in which cards were received doesn’t matter.)<br>
+(b) How many possibilities are there overall for what hands everyone will get, assuming
+that it matters which player gets which hand, but not the order of cards within a hand?<br>
+	<summary>Question</summary>
+</details>
 <details>
 	A)
 	$$
@@ -201,7 +301,16 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <summary>Explaination</summary>
 </details>
 
+<!--Question13-->
 <h2>Question 13</h2>
+<details>
+	A certain casino uses 10 standard decks of cards mixed together into one big deck, which
+we will call a superdeck. Thus, the superdeck has 52 · 10 = 520 cards, with 10 copies
+of each card. How many different 10-card hands can be dealt from the superdeck? The
+order of the cards does not matter, nor does it matter which of the original 10 decks
+the cards came from. Express your answer as a binomial coefficient.
+	<summary>Question</summary>
+</details>
 <details>
 	$$
 	{52 + 10 - 1 \choose 10}
@@ -213,18 +322,20 @@ A round-robin tournament is being held with n tennis players; this means that ev
 <summary>Explaination</summary>
 </details>
 
+<!--Question14-->
 <h2>Question 14</h2>
 <details>
 	$$
-	(4 \cdot (2^8-2))^2
+	(4 \cdot (2^8))^2
 	$$
 <summary>Answer</summary>
 </details>
 <details>
-	You are ordering 2 pizzas.  Each pizza comes in 4 sizes and may have 1 to 7 toppings.  The \(2^8-2\) part might not seem to make sense at first, but question 15 will show us how this works.
+	You are ordering 2 pizzas.  Each pizza comes in 4 sizes and may have 1 to 7 toppings.  The \(2^8\) part might not seem to make sense at first, but question 15 will show us how this works.
 <summary>Explaination</summary>
 </details>
 
+<!--Question23-->
 <h2>Question 23</h2>
 <details>
 	$$
