@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+
 <details>
   A)
   $$
-  4 \left(\dfrac{ \sum_{i=0}^{52} {}^{52-12-4}P_{i} \cdot (52-i-1)! }{52!}\right)
+  4 \left( \dfrac{ \sum_{i=0}^{52} {}^{52-12-4}P_{i} \cdot (52-i-1)! }{52!} \right) = \dfrac{1}{4}
   $$
   B)
   $$
@@ -12,8 +21,8 @@
 <details>
   You would be forgiven for thinking this is a complicated answer.  Let's look at each numbe and break it down.<br>
   the denominator is \(52!\) because that is the number of ways a deck of 52 cards can be shuffled.<br>
-  the 12 comes from the total number of cards that cannot appear before our first ace.<br>
+  the 12 comes from the total number of cards that cannot appear before our first ace (4 Jacks, 4 Queens and 4 Kings).<br>
   4 is the number of Aces<br>
-  i represents the number of cards appearing before the first Ace.  We incrament i and add all the possible permutations with an Ace in that position.  
+  i represents the number of cards appearing before the first Ace.  We increment i and add all the possible permutations with an Ace in that position.  
   <summary>Explanation</summary>
 </details>
