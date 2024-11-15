@@ -19,10 +19,17 @@
   <summary>Answer</summary>
 </details>
 <details>
-  You would be forgiven for thinking this is a complicated answer.  Let's look at each numbe and break it down.<br>
+    A)<br>
+  You would be forgiven for thinking this is a complicated quation with a simple answer.  Let's look at each numbe and break it down.<br>
   the denominator is \(52!\) because that is the number of ways a deck of 52 cards can be shuffled.<br>
   the 12 comes from the total number of cards that cannot appear before our first ace (4 Jacks, 4 Queens and 4 Kings).<br>
   4 is the number of Aces<br>
-  i represents the number of cards appearing before the first Ace.  We increment i and add all the possible permutations with an Ace in that position.  
+  i represents the number of cards appearing before the first Ace.  We increment i and add all the possible permutations with an Ace in that position.
+    <br>B)<br>
+    This time we want to count how many ways we can have exactly 1 Jack, 1 Queen, and 1 Ace.  
+    Our lower bound for i in the sigma notation starts at 3 and ends at 39.  i represents the number of cards appearing before our fist Ace.  
+    Because we need 1 Jack,Queen and King; we use \({i \choose 3}\) to count the positions where we can put King Jack and Ace.  
+    Then we multiply that by \(3!\) to count the permutations of the three cards.  
+    
   <summary>Explanation</summary>
 </details>
