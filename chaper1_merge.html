@@ -14,7 +14,7 @@
   $$
   B)
   $$
-  4^4 \left( \dfrac{ \sum_{i=3}^{39} 3! {i \choose 3} {}^{(52 - 16)}P_{(i-3)} (52-i-1)!}{52!}\right)
+  4^4 \left( \dfrac{ \sum_{i=3}^{39} 3! {i \choose 3} {}^{(52 - 16)}P_{(i-3)} (52-i-1)!}{52!}\right) \approx 0.035
   $$
   <summary>Answer</summary>
 </details>
@@ -30,6 +30,8 @@
     Our lower bound for i in the sigma notation starts at 3 and ends at 39.  i represents the number of cards appearing before our fist Ace.  
     Because we need 1 Jack,Queen and King; we use \({i \choose 3}\) to count the positions where we can put King Jack and Ace.  
     Then we multiply that by \(3!\) to count the permutations of the three cards.  
+    Now all that is to count permutations of remaning cards to the left and right of the Ace.  
+    for the left side we use \({}^{(52-16)}P_{(i-3})\), for the right we use \((52-i-i)!\)
     
   <summary>Explanation</summary>
 </details>
