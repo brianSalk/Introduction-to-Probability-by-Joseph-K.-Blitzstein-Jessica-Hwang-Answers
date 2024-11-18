@@ -59,3 +59,127 @@
     We can simplify this and just count the number of positions the two can be seated at, then divide that by the total pairings possible.
     <summary>Explanation</summary>
 </details>
+
+<h2>Question 38</h2>
+<details>
+	<summary>Question</summary>
+</details>
+<details>
+	A)
+	$$
+	\begin{cases}
+	\dfrac{{n \choose k}}{n^k} & \text{if} & k \le n \\
+	0 & \text{otherwise}
+	\end{cases}
+	$$
+	B)
+	$$
+	\dfrac{{n + k - \choose k}}{n^k}
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	<summary>Explanation</summary>
+	A)<br>
+	Here we use \(n^k\) for the denominator because we draw \(k\) times from \(n\) balls,<br>
+	The numerator is \(n \choose k\) because we do not want to count all permutations and we only want to count unique numbers (stricktly increasing).<br><br>
+	B)<br>
+	The numerator uses stars and bars this time, this is because we can draw the same ball multiple times.  Notice there is no 0 case this time, k can be less then, equal to, or greater than n.<br>
+</details>
+
+
+<h2>Question 39</h2>
+<details>
+
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	\dfrac{ { n!{n \choose 2} }{n^n}
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	It is important to remember to lable the buckets, and the order of the balls matter.  That gives us a denominator of \(n^n\).  For the numerator, we must realize that there is one empty bucket and one bucket with two balls.  Also the order of balls in the buckets with 1 ball matter (bucket 2 getting filled first is different then bucket 3 getting filled first, even if the end result looks the same)
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 40</h2>
+<details>
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	\dfrac{26!}{\sum_{i=1}^{26} {}^{26}P_{i}} \approx \dfrac{1}{e} 
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	First off, the question does not explicitly state that words must not actually be valid English words, abcd is a no repeate word, so is wxyz.  Since there are \(26!\) 26 letter words, the numerator is straight forward.  The denominator is the sum of the number of all no-repeat words from length 1 to 26 inclusive.
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 41</h2>
+<details>
+	Show that for any events A and B,
+	$$
+	P(A) + P (B) − 1 \le P (A \cap B) \le P (A \cup B) \le P (A) + P (B).
+	$$ .
+For each of these three inequalities, give a simple criterion for when the inequality is
+actually an equality (e.g., give a simple condition such that P (A \ B) = P (A [ B) if
+and only if the condition holds).
+	<summary>Question</summary>
+</details>
+<details>
+	Let's see why these inequalities hold true.
+	$$
+	P(A) + P (B) − 1 \le P (A \cap B)
+	$$ .
+	For two events A and B in the same sample space, The intersection is at most equal to max(P(A), P(B)) and at least max(0, |P(A)-P(B)|-1).  Therefore, It is not possible for P(A) + P(B) -1 to be greater than \(P(A\cap B)\).  If P(A) = 1 and P(B) = 1, then this becomes an equality
+	$$
+	P (A \cap B) \le P (A \cup B)
+	$$
+	This one is more straight forward because the probability of two events happening at the same time can never be more than either event happening. Once again, when P(A) and P(B) both equal 1, these are the same.  Also if the both equal 0
+	$$
+	P (A \cup B) \le P (A) + P (B)
+	$$
+	This is true because inclusion-exclusion principle.  When we do P(A)+P(B), we are counting the intersection of the two events twice.  Whenever A and B are disjoint, this will be an equality.
+	<br>
+	
+
+	<summary>Answer</summary>
+</details>
+
+<h2>Question 42</h2>
+<details>
+	To prove this we can use the Law Of Total Probabilities.  Which means that for each i \(A_i \in B\), the following holds true:
+	$$
+	\sum_{i=1}^{n} A_i = B
+	$$
+	Now just let \(A\) be one of the \(A_i\), which is the same as \(B-A\)
+	<summary>Answer</summary>
+</details>
+
+<h2>Question 47</h2>
+<details>
+	A fair die is rolled n times. What is the probability that at least 1 of the 6 values never
+appears?
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	\dfrac{ {6\choose 1} (5^n) - {6 \choose 2} (4^n) + {6 \choose 3} (3^n) - {6 \choose 4} (2^n) + {6 \choose 5} }{6^n}
+	$$
+	which can be written as
+	$$
+	\dfrac{\sum_{i=1}^n (-1)^{(i-1)} {6 \choose i} (6-i)^n}{6^n}
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	First we add all the ways that we can get all but one value, then multiply it by 6 because that is how many values we have<br>
+	but then we need to subtract all the values we accidentally added twice because there are 2 values absent, then we add all the ways we accidentally subtracted when 3 values were absent and so on.  
+	<summary>Explanation</summary>
+</details>
+
+
