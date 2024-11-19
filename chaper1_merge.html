@@ -204,3 +204,49 @@ likely.
 	<summary>Explanation</summary>
 </details>
 
+<h2>Question 50</h2>
+<details>A certain class has 20 students, and meets on Mondays and Wednesdays in a classroom
+with exactly 20 seats. In a certain week, everyone in the class attends both days. On
+both days, the students choose their seats completely randomly (with one student per
+seat). Find the probability that no one sits in the same seat on both days of that week.
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	!20 = \sum_{i=0}{20} \dfrac{(-1)**i}{i!}
+	$$
+	<summary>Answer</summary>
+<details>
+	This is similar to the derangement formula, except we do not multiply by \(n!\) because we want the probability.
+	<summary>Explanation</summary>
+</details>
+</details>
+
+<h2>Question 51</h2>
+Fred needs to choose a password for a certain website. Assume that he will choose an
+8-character password, and that the legal characters are the lowercase letters a, b, c, . . . ,
+z, the uppercase letters A, B, C, . . . , Z, and the numbers 0, 1, . . . , 9.<br><br>
+(a) How many possibilities are there if he is required to have at least one lowercase letter
+in his password?<br>
+(b) How many possibilities are there if he is required to have at least one lowercase
+letter and at least one uppercase letter in his password?<br>
+(c) How many possibilities are there if he is required to have at least one lowercase
+letter, at least one uppercase letter, and at least one number in his password?<details>
+	<summary>Question</summary>
+</details>
+<details>
+	A)
+	$$
+	(26+26+10)^8 - (26+10)^8 = 215518995677440
+	$$
+	B)
+	$$
+	(26+26+10)^8 - (26+10)^8 - (26+10)^8 + 10^8 = 212697985769984
+	$$
+	C)
+	$$
+	(26+26+10)^8 - (26+10)^8 - (26+26)^8 - (26+10)^8 + 26^8 + 26^8 + 10^8 = 159655911367680
+	$$
+	<summary>Answer</summary>
+</details>
+
