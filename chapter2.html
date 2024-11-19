@@ -11,17 +11,28 @@
 
 <h2>Question 4</h2>
 <details>
+    Fred is answering a multiple-choice problem on an exam, and has to choose one of n
+options (exactly one of which is correct). Let K be the event that he knows the answer,
+and R be the event that he gets the problem right (either through knowledge or through
+luck). Suppose that if he knows the right answer he will definitely get the problem right,
+but if he does not know then he will guess completely randomly. Let P(K) = p.<br><br>
+(a) Find P(K|R) (in terms of p and n).<br>
+(b) Show that P(K|R) ≥ p, and explain why this makes sense intuitively. When (if ever)
+does P(K|R) equal p?
+  <summary>Question</summary>
+</details>
+<details>
   A)
   $$
   P(K|R) = \dfrac{p}{p + (1-p)/n}
   $$
-    B)
-    \(P(K|R)\) will always be greater than or equal to \(p\) because getting the answer right 
-  <summary>Question</summary>
-</details>
-<details>
+    B) Intuitivly, 
+    \(P(K|R)\) will always be greater than or equal to \(p\) because getting the answer right is usually evidence in favor of knowlege.<br>
+    When \(p=1\) or \(p=0\), then \(P(K|R)=p\)
   <summary>Answer</summary>
 </details>
+
 <details>
+    This equation might not look like Bayes because \(P(R|K) = 1\), and therefore we can implicitly multiply by 1.
   <summary>Explanation</summary>
 </details>
