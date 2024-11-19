@@ -56,9 +56,11 @@ does P(K|R) equal p?
     \(
     H = seven heads in a row
     \)
-    We are told that \(P(D) = .01\) and \(P(H|D) = 1\), which gives us enough info to build our equation
+    We are told that \(P(D) = .01\) and \(P(H|D) = 1\).  With a bit of common sense we can finish building this equation
     $$
+    P(D|H) = \dfrac{P(H) \cdot P(H|D)}{P(D) \cdot P(H|D) + P(D^c) \cdot .5^7}
     $$
+    \(.5^7\) is the probability of flipping a fair coin 7 times and getting heads heach time.
     
     <summary>Explanation</summary>
 </details>
