@@ -211,5 +211,34 @@ on time.
 </details>
 
 <h2>Question 11</h2>
-<details></details>
-    
+<details>
+	An exit poll in an election is a survey taken of voters just after they have voted. One
+major use of exit polls has been so that news organizations can try to figure out as soon as possible who won the election, before the votes are officially counted. This has
+been notoriously inaccurate in various elections, sometimes because of selection bias:
+the sample of people who are invited to and agree to participate in the survey may not
+be similar enough to the overall population of voters.
+Consider an election with two candidates, Candidate A and Candidate B. Every voter
+is invited to participate in an exit poll, where they are asked whom they voted for; some
+accept and some refuse. For a randomly selected voter, let A be the event that they voted
+for A, and W be the event that they are willing to participate in the exit poll. Suppose
+that P(W|A)=0.7 but P(W|A
+c
+)=0.3. In the exit poll, 60% of the respondents say
+they voted for A (assume that they are all honest), suggesting a comfortable victory for
+A. Find P(A), the true proportion of people who voted for A.
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	P(A) \approx .391
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	To find \(P(A)\), we find the equation for \(P(A|W)\) and then solve for \(P(A)\).
+	$$
+	P(A|W) = \dfrac{.7x}{.7x + .3(1-x)} = .6
+	$$
+	Noticed I replaced \(P(A)\) with \(x\) for clarity.
+	<summary>Explanation</summary>
+</details>
