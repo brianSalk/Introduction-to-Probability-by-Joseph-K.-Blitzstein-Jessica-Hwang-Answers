@@ -160,7 +160,45 @@ on time.
 </details>
 <details>
 	A)<br>
-	If \(A_1\)
+	Let's break this down at into smaller parts.  First we look at the probabilies for event \(A_2\)
+	$$
+	P(A_2|A_1) = .8
+	$$
+	$$
+	P(A_2^c|A_1) = .2
+	$$
+	$$
+	P(A_3|P_2) = .8P(A_2|A_1)
+	$$
+	$$
+	P(A_3|P_2^c) = .3P(A_2^c|A_1)
+	$$
+	$$
+	P(A_3|P_1) = P(A_3|P_2^c) + P(A_3|P_2)
+	$$
+	When we plug in the values for the right-hand side of that equation, we get the answer.  Notice that we only end up with two cases being added, this is because \(A_2\) and \(A_2^c\) are mutually exclusive.<br>
+	<br>
+	We do the same thing for \(P(A_3|A_1^c)\) except the values are
+	$$
+	P(A_2|A_1^c) = .3
+	$$
+	$$
+	P(A_2^c|A_1^c) = .7
+	$$
+	$$
+	P(A_3|A_2) = .8P(A_2|A_1^c)
+	$$
+	$$
+	P(A_3|A_2^c) = .3P(A_2^c|A_1^c)
+	$$
+	Now we have everything we need to solve for \(P(A_3|A_1^c)\)<br><br>
+	B)<br>
+	Now we will have four cases to add together, they are
+	$$
+	P(A_3|A_2,A_1) = .75(.8 \times .8)
+	$$
 	<summary>Explanation</summary>
 </details>
+
+<h2>Question 11</h2>
     
