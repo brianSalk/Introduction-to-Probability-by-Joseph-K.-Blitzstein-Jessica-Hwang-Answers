@@ -271,3 +271,63 @@ receives 110, what is the probability that Alice intended to convey a 1?
 	$$
 	<summary>Answer</summary>
 </details>
+<details>
+
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 13</h2>
+<details>
+	Company A has just developed a diagnostic test for a certain disease. The disease
+afflicts 1% of the population. As defined in Example 2.3.9, the sensitivity of the test is
+the probability of someone testing positive, given that they have the disease, and the
+specificity of the test is the probability that of someone testing negative, given that they
+don’t have the disease. Assume that, as in Example 2.3.9, the sensitivity and specificity
+are both 0.95.
+Company B, which is a rival of Company A, offers a competing test for the disease.
+Company B claims that their test is faster and less expensive to perform than Company
+A’s test, is less painful (Company A’s test requires an incision), and yet has a higher
+overall success rate, where overall success rate is defined as the probability that a random
+person gets diagnosed correctly.<br><br>
+(a) It turns out that Company B’s test can be described and performed very simply: no
+matter who the patient is, diagnose that they do not have the disease. Check whether
+Company B’s claim about overall success rates is true.<br>
+(b) Explain why Company A’s test may still be useful.<br>
+(c) Company A wants to develop a new test such that the overall success rate is higher
+than that of Company B’s test. If the sensitivity and specificity are equal, how high
+does the sensitivity have to be to achieve their goal? If (amazingly) they can get the
+sensitivity equal to 1, how high does the specificity have to be to achieve their goal? If
+(amazingly) they can get the specificity equal to 1, how high does the sensitivity have
+to be to achieve their goal?
+	<summary>Question</summary>
+</details>
+<details>
+	A)
+	first we define our events
+	$$
+	D = \text{has disease}
+	$$
+	$$
+	T_p = \text{tests positive}
+	$$
+	$$
+	T_n = \text{tests negative}
+	$$
+	With those events defined, we can set up an equation to see how likely a person is to actually have a disease given that company A's test gave them a positive result.
+	$$
+	P(D|T_p) = \dfrac{.01 \times .95}{(.01 \times .95) + (.99 \times .05)} \approx .161
+	$$
+	And an equation for how likely someone is to not be diseased given a negative result.
+	$$
+	P(D^c|T_n) = \dfrac{.99 \times .95}{(.99 \times .95) + (.01 \times .05)} \approx .998
+	$$
+	This means that using company A's test, there is a \(1-.161\) false positive and basically no false negative.<br>
+	Company B has a false negative of .01 and a false positive of 0, so in the general population, company B performs much better.<br><br>
+	B) <br>
+	This may lead some to believe that company A's test is useless or even fake!  This is misguided though.  Company A's test could still be usefull if there is a population where the rate of disease is higher than the general population.
+	<summary>Answer</summary>
+
+</details>
+<details>
+	<summary>Explanation</summary>
+</details>
