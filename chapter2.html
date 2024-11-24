@@ -335,6 +335,38 @@ to be to achieve their goal?
 	<summary>Answer</summary>
 
 </details>
+
+<h2>Question 14</h2>
 <details>
-	<summary>Explanation</summary>
+	Consider the following scenario, from Tversky and Kahneman:<br><br>
+	<em>Let A be the event that before the end of next year, Peter will have installed
+a burglar alarm system in his home. Let B denote the event that Peter’s
+home will be burglarized before the end of next year.
+		</em>
+(a) Intuitively, which do you think is bigger, P (A|B) or P (A|Bc)? Explain your intuition.<br>
+(b) Intuitively, which do you think is bigger, P (B|A) or P (B|Ac)? Explain your intuition.<br>
+(c) Show that for any events A and B (with probabilities not equal to 0 or 1), P (A|B) >
+P (A|Bc) is equivalent to P (B|A) > P (B|Ac).<br>
+(d) Tversky and Kahneman report that 131 out of 162 people whom they posed (a)
+and (b) to said that P (A|B) > P (A|Bc) and P (B|A) < P (B|Ac). What is a plausible
+explanation for why this was such a popular opinion despite (c) showing that it is
+impossible for these inequalities both to hold?<br>
+	<summary>Question</summary>
+</details>
+<details>
+	A)<br>
+	Intuitively, I would think that \(P(A|B)\) is higher than \(P(A|B^c)\) because if his house gets broaken into, he is more likely to install the burgaler alarm.<br>
+	B)<br>
+	Here my intuition says \(P(B|A^c)\) should be greater than \(P(B|A)\), but this cannot be the case if the above condition holds.<br>
+	C)<br>
+	We use the definition of dependent probability to demostrate why \(P(A|B) \gt P(A|B^c)\) is equivelant to \(P(B|A) \tg P(B|A^c)\) as long as both \(P(A)\) and \(P(B)\) are not 0 or 1.<br>
+	$$
+	\dfrac{P(B\cap A}{P(A)} \gt \dfrac{P(B\cap A^c)}{A^c}
+	$$
+	and
+	$$
+	\dfrac{P(A\cap B)}{P(B)} \gt \dfrac{P(A \cap B^c}{P(B^c)}
+	$$
+	plug in any number otherthan 0 or 1 for both probabilities and see if they hold, this should give you a better intuition about why this is true
+	<summary>Answer</summary>
 </details>
