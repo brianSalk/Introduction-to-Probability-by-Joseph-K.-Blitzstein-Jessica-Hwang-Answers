@@ -657,3 +657,79 @@ $$
 	
 	<summary>Answer</summary>
 </details>
+
+<h2>Question 27</h2>
+<details>
+	Suppose that there are 5 blood types in the population, named type 1 through type 5,
+with probabilities p1, p2, . . . , p5. A crime was committed by two individuals. A suspect,
+who has blood type 1, has prior probability p of being guilty. At the crime scene blood
+evidence is collected, which shows that one of the criminals has type 1 and the other
+has type 2.
+Find the posterior probability that the suspect is guilty, given the evidence. Does the
+evidence make it more likely or less likely that the suspect is guilty, or does this depend
+on the values of the parameters p, p1, . . . , p5? If it depends, give a simple criterion for
+when the evidence makes it more likely that the suspect is guilty.
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	P(G|E) = \dfrac{p}{p + \frac{p_1}{p_1+p_2}}
+	$$
+	Finding this evidence does not always increase the probability that he is guilty!  If his prior probability of guilt is \(0\) or \(1\) then none of this matters (think about Oliver Cromwell).
+	<summary>Answer</summary>
+</details>
+<details>
+	For this question, we assume that blood tests at a crime scene are 100% accurate.  So there is a probability of \(0\) that our suspect is guilty given his bloodtype is not found at the crimescene and a probability of \(1\) that you will find his blood at the crime scene given he is guilty.<br>
+	
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 30</h2>
+<details>
+	A family has 3 children, creatively named A, B, and C.<br><br>
+(a) Discuss intuitively (but clearly) whether the event “A is older than B” is independent
+of the event “A is older than C”.<br>
+(b) Find the probability that A is older than B, given that A is older than C.
+	<summary>Question</summary>
+</details>
+<details>
+	A) If “A is older than B” is independent of "A is older than C", that would mean that finding out that A is older than B tells us nothing about whether A is older than C.  <br>
+	Intuitively, this cannot be true.  If A is the youngest then A is not older than either and if A is oldest then A is older than both.  Finding out that A is older than B makes is more likely that A is the oldest child.
+	<br>
+	b) There are 6 possible birth orders:<br>
+	<b>ABC</b> A older than C<br>
+	<b>ACB</b> A older than C<br>
+	<b>BAC</b> A older than C<br>
+	<b>BCA</b><br>
+	<b>CAB</b><br>
+	<b>CBA</b><br>
+	We clearly see 3 orderings where A is born before C (and therefore older) and of those, 2 where A is older than B, leaving us with the answer of:
+	$$
+	P(A>B|A>C) = \dfrac{2}{3}
+	$$
+	<summary>Answer</summary>
+</details>
+
+<h2>Question 31</h2>
+<details>
+	Is it possible that an event is independent of itself? If so, when is this the case?
+	<summary>Question</summary>
+</details>
+<details>
+	when \(P(A) = 1\) or when \(P(A) = 0\), the event A is independant of itself.
+	<summary>Answer</summary>
+</details>
+<details>
+	This was a weird question for me to think about... hurt my brain a little :-)<br>
+	First, let's refresh our understanding of independance:<br>
+	Events A and B are independant if:<br>
+	$$
+	P(A|B) = P(B|A)
+	$$
+	and 
+	$$
+	P(A \CAP B) = P(A)P(B)
+	$$
+	If event A happens, then the probability that it happened is 1, if it did not happen, the probability it did not happen is 0.  So unless \(P(A) = 0\) or \(P(A) = 1\), there is no way for it to be independant of itself.
+	<summary>Explanation</summary>
+</details>
