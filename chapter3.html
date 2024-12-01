@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+
+<h2>Question 1</h2>
+<details>
+	People are arriving at a party one at a time. While waiting for more people to arrive
+they entertain themselves by comparing their birthdays. Let X be the number of people
+needed to obtain a birthday match, i.e., before person X arrives there are no two people
+with the same birthday, but when person X arrives there is a match. Find the PMF of
+X.
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	\dfrac{x-1}{365} \prod_{i=1}^{363} \dfrac{365-i}{365} 
+	$$
+	Where \(x\) is between 2 and 365 <br>
+	There are simpler ways to write this without sigma notation, I will leave that to the readers to figure out (not because I am lazy)
+	<summary>Answer</summary>
+</details>
+<details>
+	P(person number x is the first person to have same birthday) = P(noone has same birthday)P(last person has same birthday as x-1 pervious)
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 2</h2>
+<details>
+	(a) Independent Bernoulli trials are performed, with probability 1/2 of success, until
+	there has been at least one success. Find the PMF of the number of trials performed.<br>
+(b) Independent Bernoulli trials are performed, with probability 1/2 of success, until
+there has been at least one success and at least one failure. Find the PMF of the number
+of trials performed.
+	<summary>Question</summary>
+</details>
+<details>
+	A) 
+	$$
+	p_X(x) = P(X = x) = \dfrac{1}{2^x}
+	$$
+	Where \(x\) is the number of bernouli trials before 
+	B)
+	$$
+	p_X(x) = P(X = x) = \begin{cases}
+	\dfrac{x-1}{2^{(x-1)}} & \text{if} x > 1 \\
+	0 & \text{otherwise}
+	\end{cases}
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	A) Count the number of ways you can flip a coin \(x\) times and have the first \(x-1\) flips be tails and the last flip be heads.  There is only one way to do this but there are \(2^x\) possible other ways for the coin to land.<br>
+	B) Count the number of ways that you can have either all heads and the last flip is tails or <em>vis-versa<em> with at least two flips.<br>
+
+	<summary>Explanation</summary>
+</details>
