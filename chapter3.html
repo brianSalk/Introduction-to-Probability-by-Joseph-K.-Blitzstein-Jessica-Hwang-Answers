@@ -43,7 +43,7 @@ of trials performed.
 	$$
 	p_X(x) = P(X = x) = \dfrac{1}{2^x}
 	$$
-	Where \(x\) is the number of bernouli trials before 
+	Where \(x\) is the number of bernouli trials before a success
 	B)
 	$$
 	p_X(x) = P(X = x) = \begin{cases}
@@ -55,7 +55,88 @@ of trials performed.
 </details>
 <details>
 	A) Count the number of ways you can flip a coin \(x\) times and have the first \(x-1\) flips be tails and the last flip be heads.  There is only one way to do this but there are \(2^x\) possible other ways for the coin to land.<br>
-	B) Count the number of ways that you can have either all heads and the last flip is tails or <em>vis-versa<em> with at least two flips.<br>
+	B) Count the number of ways that you can have either all heads and the last flip is tails or <em>vis-versa</em> with at least two flips.<br>
 
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 3</h2>
+<details>Let X be an r.v. with CDF F , and Y = μ + σX, where μ and σ are real numbers with
+σ > 0. (Then Y is called a location-scale transformation of X; we will encounter this
+concept many times in Chapter 5 and beyond.) Find the CDF of Y , in terms of F 
+	<summary>Question</summary>
+</details>
+<details>
+	$$
+	F_Y(y) = F_X(\dfrac{y-\mu}{\sigma})
+	$$
+	<summary>Answer</summary>
+</details>
+<details>
+	When it asks us to find Y in terms of F, it is asking us to define a new function \(F_Y\) that uses our new variable \(Y\) instead of \(X\).<br>
+	First write \(F\).<br>
+	$$
+	F_X(x) = P(X = x)
+	$$
+	now write out \(F_Y\)
+	$$
+	F_Y(y) = P(Y = y)
+	$$
+	Now sub \(Y\) with \(Y = \mu + \sigma X\)
+	$$
+	F_Y(y) = P(\mu + \sigma X = y)
+	$$
+	And re-write with \(F\)
+	$$
+	F_Y(y) = F_X(\dfrac{y- \mu}{\sigma})
+	$$
+	<summary>Explanation</summary>
+</details>
+
+<h2>Question 4</h2>
+<details>Let n be a positive integer and
+	$$
+	F(x) = \dfrac{\lfloor x \rfloor}{n}
+	$$
+	for \(0 \le x \le n, F (x) = 0\) for x \(\lt\) 0, and F (x) = 1 for x \(\gt\) n, where \(\lfloor x \rfloor\) is the greatest
+integer less than or equal to x. Show that F is a CDF, and find the PMF that it
+corresponds to.
+
+	<summary>Question</summary>
+</details>
+<details>
+	We can prove that \(\dfrac{\lfloor x \rfloor }{n}\) is a CDF because it is non-decreasing and it sums to 1.<br>
+	We can find its PDF by finding each value for \(F(x) - F(x-1)\).  Using the above function, 
+	$$
+		F(0) = 0
+	$$
+	$$ F(1) - F(0) = \frac{1}{n}
+	$$
+	$$
+	F(2) - F(1) = \frac{1}{n}
+	$$
+	therefore, the PMF of \(F(x) = \dfrac{\lfloor x \rfloor}{n}\) is \(\dfrAC{1}{n}\)
+	<summary>Answer</summary>
+</details>
+
+<h2>Question 5</h2>
+<details>(a) Show that p(n) = \((\frac{1}{2})^{n+1})\)
+ for n = 0, 1, 2, . . . is a valid PMF for a discrete r.v.
+(b)<br> Find the CDF of a random variable with the PMF from (a).
+	<summary>Question</summary>
+</details>
+<details>
+	A) 	We can show that this is a PMF by seeing that the limit when n = \(\infty\) is 1 and that all values in the given domain are non-negative<br>
+	$$
+	\lim_{n \to \infty} \left( \frac{1}{2} \right)^{n+1} = 1
+	$$
+	B) We get the CDF by adding all values from \(0\) to \(n\)
+	$$
+	\sum_{i=0}^{n} \dfrac{1}{2^{n+1}} = \dfrac{2^{n+1}-1}{2^{n+1}}
+	$$
+
+	<summary>Answer</summary>
+</details>
+<details>
 	<summary>Explanation</summary>
 </details>
