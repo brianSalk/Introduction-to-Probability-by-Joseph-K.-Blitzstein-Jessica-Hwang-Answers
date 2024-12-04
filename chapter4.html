@@ -99,3 +99,15 @@ rolls. For what values of the first roll should you continue for a second roll?
     ```
     <summary>Answer</summary>
 </details>
+<details>
+    To find our strategy, we need to know what the expected value of the remaining flips is.  If the value of the current flip is better than the expected value of th remaining flips, you should take the money.<br>
+    $$
+    E(MAX(2flips)) \approx 4.47
+    $$
+    $$
+    E((MAX(1flip)) = 3.5
+    $$
+    Using the above, we should only stop after the first flip if it is greater than 4.47 and after the second flip if it is greater than 3.5<br>
+    
+    <summary>Explanation</summary>
+</details>
