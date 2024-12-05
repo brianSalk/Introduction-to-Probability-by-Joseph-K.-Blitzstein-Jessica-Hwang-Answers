@@ -95,7 +95,7 @@ rolls. For what values of the first roll should you continue for a second roll?
     The best strategy is to stop rolling if your first roll is a 5 or 6,<br>
     and stop rolling if your second roll is a 4, 5, or 6<br><br>
     ```math
-    X(best_strategy) \approx 4.666
+    X(best_strategy) \approx 4.66\overline{6}
     ```
     <summary>Answer</summary>
 </details>
@@ -108,6 +108,20 @@ rolls. For what values of the first roll should you continue for a second roll?
     E((MAX(1flip)) = 3.5
     $$
     Using the above, we should only stop after the first flip if it is greater than 4.47 and after the second flip if it is greater than 3.5<br>
+    We an calculate the expeced value of this new strategy by finding the probability that we stop on a given roll, multiplied by the expected value of that roll.<br>
+    let \(p_j\) be the probability that we stop on roll \(j\) and \(v_j\) be the expected value when we stop on that roll.<br>
+    \(p_1 = \dfrac{1}{3}\)<br>
+    \(p_2 = \dfrac{2}{3} \cdot \dfrac{1}{2}\)<br>
+    \(p_3 = p2\)<br>
+   \(v_1 = \dfrac{5+6}{2}\)<br> 
+    \(v_1 = \dfrac{4+5+6}{3}\)<br> 
+    \(v_1 = \dfrac{1+2+3+4+5+6}{6}\)<br> 
+    which gives us the  equation:
+    $$
+    \sum_{i=1}^{3} v_ip_i = 4 \dfrac{2}{3}
+    $$
     
     <summary>Explanation</summary>
 </details>
+
+    
