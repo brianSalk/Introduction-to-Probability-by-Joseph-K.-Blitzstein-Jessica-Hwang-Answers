@@ -149,4 +149,34 @@ Hint: See the math appendix for some useful facts about sums
     <summary>Explanation</summary>
 </details>
 
+<h2>Question 6</h2>
+<details>
+    Two teams are going to play a best-of-7 match (the match will end as soon as either
+team has won 4 games). Each game ends in a win for one team and a loss for the other
+team. Assume that each team is equally likely to win each game, and that the games
+played are independent. Find the mean and variance of the number of games played.
+    <summary>Question</summary>
+</details>
+<details>
     
+    <summary>Answer</summary>
+</details>
+<details>
+    We use the binomial distribution to solve this type of problem because win probabilities are independant.<br>
+    There are two 'tricks' <br>
+    The first trick is that we must multiply each binomil probability by \(2\) because either team can win, thereby doubling successes.<br>
+    The second is that we must find the different ways for each team to win \(3\) games, not \(4\).  This is because we already know the winning team wins the last game.<br>
+    $$
+    p_4 = 2{4 \choose 4} p^3 q^0 = .125
+    $$
+    $$
+    p_5 = 2{5 \choose 4} p^4 q^1 = .25
+    $$
+    $$
+    p_6 = 2{6 \choose 4} p^4 q^2 = .3125
+    $$
+    $$
+    p_7 = 2{7 \choose 4} p^4 q^3 = .3125
+    $$
+    <summary>Explanation</summary>
+</details>
