@@ -100,7 +100,8 @@ rolls. For what values of the first roll should you continue for a second roll?
     <summary>Answer</summary>
 </details>
 <details>
-    To find our strategy, we need to know what the expected value of the remaining flips is.  If the value of the current flip is better than the expected value of th remaining flips, you should take the money.<br>
+    To find our strategy, we need to know what the expected value of the remaining flips is.  
+    If the value of the current roll is better than the expected max value of the remaining roll, you should stop rolling and take the money.<br>
     $$
     E(MAX(2flips)) \approx 4.47
     $$
@@ -116,11 +117,35 @@ rolls. For what values of the first roll should you continue for a second roll?
    \(v_1 = \dfrac{5+6}{2}\)<br> 
     \(v_1 = \dfrac{4+5+6}{3}\)<br> 
     \(v_1 = \dfrac{1+2+3+4+5+6}{6}\)<br> 
-    which gives us the  equation:
+    which gives us the equation:
     $$
     \sum_{i=1}^{3} v_ip_i = 4 \dfrac{2}{3}
     $$
     
+    <summary>Explanation</summary>
+</details>
+
+<h2>Question 5</h2>
+<details>
+    Find the mean and variance of a Discrete Uniform r.v. on 1, 2,...,n.
+Hint: See the math appendix for some useful facts about sums
+    <summary>Question</summary>
+</details>
+<details>
+    $$
+    E(unif(n)) = \dfrac{n+1}{2}
+    $$
+    $$
+    VAR(unif(n)) = \dfrac{n^2+1}{12}
+    $$
+    <summary>Answer</summary>
+</details>
+<details>
+    finding the expected value)<br>
+    expected value of a distribution is the mean.  There are many ways to calculate the mean of a uniform distribution that starts at \(1\)<br>
+    $$
+    \dfrac{\sum\limits_{i=1}^}{n}}{n} = \dfrac{ {n \choose } }{}
+    $$
     <summary>Explanation</summary>
 </details>
 
