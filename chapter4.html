@@ -158,25 +158,39 @@ played are independent. Find the mean and variance of the number of games played
     <summary>Question</summary>
 </details>
 <details>
-    
+    $$
+    E(X) = 5.8125
+    $$
+    $$
+    V(X) \approx 1.03
+    $$
     <summary>Answer</summary>
 </details>
 <details>
     We use the binomial distribution to solve this type of problem because win probabilities are independant.<br>
-    There are two 'tricks' <br>
-    The first trick is that we must multiply each binomil probability by \(2\) because either team can win, thereby doubling successes.<br>
-    The second is that we must find the different ways for each team to win \(3\) games, not \(4\).  This is because we already know the winning team wins the last game.<br>
+    There is a 'tricks' <br>
+    We must find the different ways for each team to win \(3\) games out of \(6\), not \(4\) out of \(7\).  This is because we already know the winning team wins the last game.<br>
     $$
-    p_4 = 2{4 \choose 4} p^3 q^0 = .125
-    $$
-    $$
-    p_5 = 2{5 \choose 4} p^4 q^1 = .25
+    p_4 = {3 \choose 3} p^3 q^0 = .125
     $$
     $$
-    p_6 = 2{6 \choose 4} p^4 q^2 = .3125
+    p_5 = {4 \choose 3} p^3 q^1 = .25
     $$
     $$
-    p_7 = 2{7 \choose 4} p^4 q^3 = .3125
+    p_6 = {5 \choose 3} p^3 q^2 = .3125
     $$
+    $$
+    p_7 = {6 \choose 3} p^3 q^3 = .3125
+    $$
+    So the mean is:<br>
+    $$
+    \sum_{n=4}^{7} n \cdot p_n = 5.8125
+    $$
+    Using the above information, we can find the variance.
+    $$
+    var(X) = \sum_{i=4}^{7} (i - \mu) \cdot p_i
+    $$
+    Where \(\mu\) represents the mean found in the previous answer.
+    
     <summary>Explanation</summary>
 </details>
