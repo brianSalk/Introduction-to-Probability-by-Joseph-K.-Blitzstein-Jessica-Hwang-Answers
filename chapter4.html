@@ -288,7 +288,8 @@ the people within each region are allocated between the cities in that region.<b
 region is chosen uniformly at random. What is the expected population size of this
 randomly chosen city?
 Hint: To help organize the calculation, start by finding the PMF of the population size
-of the city.
+of the city.<br>
+    (d) Explain intuitively why the answer to (c) is larger than the answer to (a).
     <summary>Question</summary>
 </details>
 <details>
@@ -312,6 +313,48 @@ of the city.
     $$
     \dfrac{750,000}{4} + \dfrac{1,333,333.\overbar{3}}{4} + \dfrac{2,500,000}{4} + \dfrac{8,000,000}{4} = 3,145,833.33\overbar{3}
     $$
+    D)
+    $$
+    In part C, there is a \(\frac{1}{4}\)th chance of selecting a city with \(8,000,000\) people in it, while part A has equal chance of selecting any city.<br>
+    By putting all the low population cities in 1 region you make them impact the mean less.  This is how jerrymandering works.                                  
+    $$
     <summary>Answer</summary>
+</details>
+
+<h2>Question 9</h2>
+<details>
+    Consider the following simplified scenario based on Who Wants to Be a Millionaire?,
+a game show in which the contestant answers multiple-choice questions that have 4
+choices per question. The contestant (Fred) has answered 9 questions correctly already,
+and is now being shown the 10th question. He has no idea what the right answers are
+to the 10th or 11th questions are. He has one “lifeline” available, which he can apply
+on any question, and which narrows the number of choices from 4 down to 2. Fred has
+the following options available.<br><br>
+(a) Walk away with $16,000.<br>
+(b) Apply his lifeline to the 10th question, and then answer it. If he gets it wrong, he
+will leave with $1,000. If he gets it right, he moves on to the 11th question. He then
+leaves with $32,000 if he gets the 11th question wrong, and $64,000 if he gets the
+11th question right.<br>
+(c) Same as the previous option, except not using his lifeline on the 10th question, and
+instead applying it to the 11th question (if he gets the 10th question right).<br><br>
+Find the expected value of each of these options. Which option has the highest expected
+value? Which option has the lowest variance?
+    <summary>Question</summary>
+</details>
+<details>
+    The expected value is the probability of the event happening times the value of the event.
+    $$
+    E(walk) = 16,000
+    $$
+    $$
+    E(lifeline10) = \dfrac{1}{2} \cdot 1,000 + \dfrac{1}{2} \cdot \dfrac{3}{4} \cdot 32,000 + \dfrac{1}{2} \dfrac{1}{4} 64,000 = 20,500
+    $$
+    $$
+    E(lifeline11) = \dfrac{3}{4} * 1,000 + \dfrac{1}{4} \dfrac{1}{2} 16,000 + 
+    $$
+    <summary>Answer</summary>
+</details>
+<details>
+    <summary>Question</summary>
 </details>
 
