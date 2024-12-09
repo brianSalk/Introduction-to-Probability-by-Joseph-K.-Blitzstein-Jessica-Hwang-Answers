@@ -217,6 +217,22 @@ mean, and variance of the child’s birth rank.
     <summary>Answer</summary>
 </details>
 <details>
+    A) we find the probability for each birth rank by multiplying the probability of selecting each family by the proportion of that rank within each family.<br>
+    $$
+    P(X) = \begin{cases}
+    \dfrac{1}{3} + \dfrac{1}{6} + \dfrac{1/9}  & \text{if} x = 1 \\
+    \dfrac{1}{6} + \dfrac{1}{9} & \text{if} x = 2 \\
+    \dfrac{1}{9} & \text{if} x = 3
+    \end{cases}
+    $$
+    Which gives us a mean of
+    $$
+    \sum_{i=1}^{3} i \cdot p_i = 1.5
+    $$
+    and a variance of 
+    $$
+    \frac{11}{18}(1-1.5)^2 + \frac{5}{18}(2-1.5)^2 + \frac{1}{9}(3-1.5)^2 = .47\overbar{2}
+    $$
     B) all 100 families have a first child, 70 have a second, and 20 have a third.<br>
     $$
     p(c_1) = \dfrac{100}{190} = \dfrac{10}{19}
@@ -241,7 +257,7 @@ mean, and variance of the child’s birth rank.
     $$
     Now we can use the mean to calculate variance
     $$
-    \dfrac{\sum\limits_{i=1}^{}}{190} \approx .4737
+    \sum_{i=1}^{3} (i-\mu)^2 p_i \approx .4737
     $$
     <summary>Explanation</summary>
 </details>
