@@ -371,3 +371,38 @@ the payoff is $\(n^2\)?
     <summary>Explanation</summary>
 </details>
 
+<h2>Question 11</h2>
+<details>
+    Martin has just heard about the following exciting gambling strategy: bet $1 that a
+fair coin will land Heads. If it does, stop. If it lands Tails, double the bet for the next
+toss, now betting $2 on Heads. If it does, stop. Otherwise, double the bet for the next
+toss to $4. Continue in this way, doubling the bet each time and then stopping right
+after winning a bet. Assume that each individual bet is fair, i.e., has an expected net
+winnings of 0. The idea is that
+    $$
+    2^0 + 2^1 + 2^2 ... + 2^n = 2^{n+1} - 1
+    $$
+so the gambler will be $1 ahead after winning a bet, and then can walk away with a
+profit.
+Martin decides to try out this strategy. However, he only has $31, so he may end up
+walking away bankrupt rather than continuing to double his beg.  On average, how much money will Martin win?
+    <summary>Question</summary>
+</details>
+<details>
+    $$
+    E(X) = (1-.5^5) -31 \cdot .5^5 = 0
+    $$
+    <summary>Answer</summary>
+</details>
+<details>
+    He has a high probability of winning a small amount and a small probability of losing a large amount of money.<br>
+    $$
+    E(X) = \begin{cases}
+    (1-.5^5) & 1 \\
+    .5^5 & 31 \\
+    \end{cases}
+    $$
+    <summary>Explanation</summary>
+</details>
+
+
