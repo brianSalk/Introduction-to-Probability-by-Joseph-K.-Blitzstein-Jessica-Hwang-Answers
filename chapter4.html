@@ -5,7 +5,7 @@
     <title>Chapter 4</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
 </head>
-
+<h1>Chapter 4 - Expectation</h1>
 <h2>Question 1</h2>
 <details>
     Bobo, the amoeba from Chapter 2, currently lives alone in a pond. After one minute
@@ -470,4 +470,22 @@ value depend on what strategy player A uses?
     B) 
     <summary>Answer</summary>
 </details>
-
+<h1>Indicator r.v.s</h1>
+<h2>Question 30</h2>
+<details>
+    Randomly, k distinguishable balls are placed into n distinguishable boxes, with all
+possibilities equally likely. Find the expected number of empty boxes.
+    <summary>Question</summary>
+</details>
+<details>
+    $$
+    E(X) = n(\dfrac{n-1}{n})^k
+    $$
+    <summary>Answer</summary>
+</details>
+<details>
+    The probability of any given bucket being empty after placing a ball in a random bucket is \(\dfrac{n-1}{n}\)<br>
+    Since we do this for each ball, we raise \(\dfrac{n-1}{n}\) to the \(k^{th}\) power<br>
+    Lastly, we multiply this all by \(n\) because there are \(n\) buckets<br>
+    <summary>Explanation</summary>
+</details>
