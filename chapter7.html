@@ -28,4 +28,51 @@ other to show up. What is the probability they will meet for lunch that day?
         There is a \(25^{2}\) chance that both of them arrive after \(12:45\).  
         <summary>Explanation</summary>
     </details>
+
+    <h2>Question 2</h2>
+    <details>
+        Alice, Bob, and Carl arrange to meet for lunch on a certain day. They arrive indepen-
+dently at uniformly distributed times between 1 pm and 1:30 pm on that day.<br>
+(a) What is the probability that Carl arrives first?<br>
+<em>For the rest of this problem, assume that Carl arrives first at 1:10 pm, and condition on
+this fact.</em><br>
+(b) What is the probability that Carl will have to wait more than 10 minutes for one of
+the others to show up? (So consider Carl’s waiting time until at least one of the others
+has arrived.)<br>
+(c) What is the probability that Carl will have to wait more than 10 minutes for both
+of the others to show up? (So consider Carl’s waiting time until both of the others has
+arrived.)<br>
+(d) What is the probability that the person who arrives second will have to wait more
+than 5 minutes for the third person to show up?<br>
+        <summary>Question</summary>
+    </details>
+    <details>
+        A) 
+        $$ 
+        \dfrac{1}{3}
+        $$
+        B) I am assuming the question is asking for Carl to wait for exactly one person, not at least one.<br>
+        $$
+        \dfrac{1}{2}
+        $$
+        C)
+        $$
+        \dfrac{1}{4}
+        $$
+        D)
+        $$
+        \dfrac{3}{4} \cdot \dfrac{1}{3} = \dfrac{1}{4}
+        $$
+        <summary>Answer</summary>
+    </details>
+    <details>
+        A) pretty self-explanatory<br>
+        B) break the remaining \(20\) minutes into two \(10\) minute segments.  There are \(4\) ways that you could place the \(2^{nd}\) and \(3^{rd}\) people into.<br>
+        There are \(2\) ways for one person to arrive before \(10\) minutes and the other to arrive \(10\) minutes.  There is one way for both people to arrive after \(10\) minutes<br>
+        and one way for both to show up before \(10\) minutes.<br>
+        C) Using the same logic as part 2, except this time we want to know the probability that both people are in the second segment.<br>
+        D) The \(2^{nd}\) person must arrive within the first \(15\) minutes of the remaining \(20\) minutes, otherwise it would be impossible to wait more than \(5\) minutes.<br>
+        The probability that the second person arrives within the first \(15\) minutes is \(\dfrac{3}{4}\), and the probability that the third person arrives \(5\) minutes after that is \(\dfrac{1}{4}\)
+        <summary>Explanation</summary>
+    </details>
 </body>
