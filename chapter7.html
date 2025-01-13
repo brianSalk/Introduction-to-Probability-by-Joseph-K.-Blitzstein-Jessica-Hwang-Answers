@@ -124,12 +124,17 @@ the indicator r.v for the tosses landing the same way.<br><br>
         \end{cases}
         $$
         C)<br>
-        No, \(X\) and \(Y\) are not independent.  If \(X\) is \(1\), then \(Y\) must be \(0\), even though \(Y\) is \(1\) 50% of the time.  <br>
+        No, \(X\) and \(Y\) are not independent.  If \(X\) is \(1\), then \(Y\) must be \(0\), even though \(Y\) is \(1\) \(50\)% of the time when we do not know \(Y\).  <br>
         D)<br>
-        P(X = x \vert Y = y) = \begin{cases}
-        \dfrac{1}{2} & that &  x = 0 & if & y = 0 \\
-        \dfrac{1}{2} & if y = 1
-        \end{cases}
+        $$
+        P(X = x \vert Y = y) = \dfrac{P(X \cap Y)}{P(Y)} = P(X = 1 \vert Y = 0) = 1
+        $$
+        $$
+        P(Y = y \vert X = x) = \dfrac{P(Y \cap X)}{P(X)}
+        $$
+        $$
+        P(Y = y \vert X = 0)
+        $$
         <summary>Answer</summary>
     </details>
 </body>
