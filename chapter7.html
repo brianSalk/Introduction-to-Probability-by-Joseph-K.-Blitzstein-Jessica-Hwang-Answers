@@ -126,15 +126,27 @@ the indicator r.v for the tosses landing the same way.<br><br>
         C)<br>
         No, \(X\) and \(Y\) are not independent.  If \(X\) is \(1\), then \(Y\) must be \(0\), even though \(Y\) is \(1\) \(50\)% of the time when we do not know \(Y\).  <br>
         D)<br>
+        X dependent on Y
         $$
-        P(X = x \vert Y = y) = \dfrac{P(X \cap Y)}{P(Y)} = P(X = 1 \vert Y = 0) = 1
-        $$
-        $$
-        P(Y = y \vert X = x) = \dfrac{P(Y \cap X)}{P(X)}
+        P(X = 0 \vert Y = 1) = .5
         $$
         $$
-        P(Y = y \vert X = 0)
+        P(X = 1 \vert Y = 0) = 1
         $$
+        $$
+        P(X = 2 \vert Y = 1) = .5
+        $$
+        all other values for X dependent on Y are zero<br>
+        Y dependent on X
+        $$
+        P(Y = 1 \vert (X = 0) \cup (X = 2)) = 1
+        $$
+        $$
+        P(Y = 0 \vert X = 1) = 1
+        $$
+        all other values for Y dependent on X are zero<br>
+        
+        
         <summary>Answer</summary>
     </details>
 </body>
