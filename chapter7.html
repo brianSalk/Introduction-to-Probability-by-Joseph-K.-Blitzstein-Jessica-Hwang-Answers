@@ -89,4 +89,47 @@ number of successful surgeries.<br><br>
 (c) Find the conditional PMF of H given X = k. <br>
         <summary>Question</summary>
     </details>
+
+    <h2>Question 4</h2>
+    <details>
+        A fair coin is flipped twice. Let X be the number of Heads in the two tosses, and Y be
+the indicator r.v for the tosses landing the same way.<br><br>
+        (a) Find the joint PMF of X and Y.<br>
+(b) Find the marginal PMFs of X and Y.<br>
+(c) Are X and Y independent?<br>
+(d) Find the conditional PMFs of Y given X = x and of X given Y = y.
+        <summary>Question</summary>
+    </details>
+    <details>
+        A)<br>
+        $$
+        f(x,y) = P(X = x \cap Y = y) = \begin{cases}
+        \dfrac{1}{4} & if x = 0, & y = 1 \\
+        \dfrac{1}{2} & x = 1, & y = 0 \\
+        dfrac{1}{4} & x = 2, & y = 1 \\
+        \end{cases}
+        $$
+        B)
+        $$
+        P(X = x) = \sum_{Y} P(X = x \cap Y = y) = \begin{cases}
+        \dfrac{1}{4} & if x = 0 \\
+        \dfrac{1}{2} & x = 1 \\
+        dfrac{1}{4} & x = 2 \\
+        \end{cases}
+        $$
+        $$
+        P(Y = y) = \sum{X} P(X = x \cap Y = y) = \begin{cases}
+        \dfrac{1}{2} & if y = 0 \\
+        \dfrac{1}{2} & if y = 1
+        \end{cases}
+        $$
+        C)<br>
+        No, \(X\) and \(Y\) are not independent.  If \(X\) is \(1\), then \(Y\) must be \(0\), even though \(Y\) is \(1\) 50% of the time.  <br>
+        D)<br>
+        P(X = x \vert Y = y) = \begin{cases}
+        \dfrac{1}{2} & that &  x = 0 & if & y = 0 \\
+        \dfrac{1}{2} & if y = 1
+        \end{cases}
+        <summary>Answer</summary>
+    </details>
 </body>
