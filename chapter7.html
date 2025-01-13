@@ -163,8 +163,25 @@ Heads.<br><br>
         $$
         f_{X,Y}(x,y) = P(X = x, Y = y) = \dfrac{ {x \choose y} p^y (1-p)^{x-y} }{6}
         $$
-        They cannot be independent because a higher value of \(X\) allows a higher value for \(Y\).
-        Where \(y\) \(\le\) \(x\)
+		Where \(1 \le y \le 6\) and \(y \le x\)<br>
+		They cannot be independent because a higher value of \(x\) allows a higher value for \(y\).<br><br> 
+		B)<br> 
+		marginal probability for \(X\)
+		$$
+		f_X(x) = P(X = x) = \sum_{y \in Y} P(X = x,Y = y) = \dfrac{1}{6}
+		$$
+		with support \(X \in [1,6]\)<br><br>
+		marginal probability for \(Y\)
+		$$
+		f_Y(y) = P(Y = y) = \sum_{x \in X} P(X = x, Y = y) = \sum_{n=x}^{6} {n \choose y} p^y (1-p)^{x-y}
+		$$
         <summary>Answer</summary>
     </details>
+	<details>
+		A)<br>
+		The value for \(X\) is chosen uniformly at random within the range \([1,6]\).  <br>
+		The value for \(Y\) is chosen randomly from the binomial distribution.  <br>
+		<summary>Explanation</summary>
+
+	</details>	
 </body>
