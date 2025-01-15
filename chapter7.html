@@ -200,13 +200,14 @@ the joint PMF, and using a story.<br>
 	<details>
 		A)
 		$$
-		P_{X,Y}(x,y) = P(X = x, Y = y) = \dfrac{ {n \choose X} { m \choose Y}}{ n+m \choose X+Y }
+		P_{X,Y}(x,y) = P(X = x, Y = y) = \dfrac{ {n \choose X} { m \choose Y}}{ {n+m \choose X+Y} }
 		$$
 		With support \(0 \le X \le n\) and \(0 \le Y \le m\) and \(X+Y = k\)<br><br>
 		B)
 		$$
-		
+		P(X) = \sum_{y \in Y} = \dfrac{ {n \choose X} { m \choose Y}}{ {n+m \choose X+Y} }
 		$$
+		This is the same as joint probability because there is exaclty one \(Y\) value for each \(X\) value.
 		<summary>Answer</summary>
 	</details>
 </body>
