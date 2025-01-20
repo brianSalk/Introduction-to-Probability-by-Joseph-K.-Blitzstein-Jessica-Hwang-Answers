@@ -270,6 +270,23 @@ equally likely). Find the joint PMF of X, Y, Z.
 		$$
 		f_{X,Y,Z}(x,y,z) = \dfrac{5!}{x!y!z!} \left(\dfrac{1}{13}\right)^{x+y} \left(\dfrac{11}{13}\right)^z
 		$$
+		where \(x+y+z = 5\)
+		B)
+		$$
+		f_{X,Y}(x,y) = \sum_{y \in Y} \dfrac{5!}{x!y!z!} \left(\dfrac{1}{13}\right)^{x+y} \left(\dfrac{11}{13}\right)^z
+		$$
+		where \(x+y+z = 5\)
+		C)
+		$$
+		f_{X,Y,Z}(x,y,z) P(X = x, Y = y, Z = z) = \dfrac{ {4 \choose x} {4 \choose y} {44 \choose z} }{ {52 \choose 5} }
+		$$
+		where \(x+y+z = 5\)
 		<summary>Answer</summary>
+	</details>
+	<details>
+		For all of these, we specify the support as \(x+y+z = 5\).  This means we can just use random variables and not worry about bounds.
+		A)<br>
+		Use multinomial and just plug in the numbers.
+		<summary>Explanation</summary>
 	</details>
 </body>
