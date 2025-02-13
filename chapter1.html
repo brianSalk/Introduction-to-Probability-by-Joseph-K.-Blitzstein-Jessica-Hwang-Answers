@@ -642,14 +642,15 @@ j married couples within the committee
 </details>
 <details>
 	$$
-	{n \choose j} {n-j \choose k - 2j} 2^{k-2j}
+	\dfrac{ {n \choose j} {n-j \choose k - 2j} 2^{k-2j} }{ {2n \choose k} }
 	$$
 	<summary>Answer</summary>
 </details>
 <details>
 	There are \(j\) ways to choose from the \(n\) couples, giving us \({n \choose j}\) <br>
 	There are \(n-j\) remaining couples and we choose \(k-2j\) of them, giving us \({n-j \choose k-2j}\) <br>
-	For each remaining couple, there are \(2\) people we can choose, giving us \(2^{k-2j}\)
+	For each remaining couple, there are \(2\) people we can choose, giving us \(2^{k-2j}\)<br>
+	The denominator is just the number of ways you can choose \(k\) from \(2n\).
 	
 	<summary>Explanation</summary>
 </details>
